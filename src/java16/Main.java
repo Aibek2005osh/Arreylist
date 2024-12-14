@@ -1,4 +1,5 @@
-import java16.Student;
+package java16;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -7,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         students.add(new Student("Elaman", 16, "java"));
-        students.add(new Student("Aibek", 19, "java"));
+        students.add(new Student("AgeException", 19, "java"));
         students.add(new Student("Baiel", 20, "javaScript"));
         students.add(new Student("Amir", 18, "javaScript"));
         students.add(new Student("Ernis", 16, "java"));
@@ -16,7 +17,6 @@ public class Main {
         students.add(new Student("Atai", 20, "javaScript"));
         students.add(new Student("Muhamedaly ", 20, "java"));
         students.add(new Student("Aisonun ", 20, "javaScript"));
-
         //todo  1
         System.out.println(students);
         //todo 2
@@ -26,7 +26,6 @@ public class Main {
         age();
         //todo 4
         aA();
-
     }
 
     public static void java() {
@@ -43,7 +42,6 @@ public class Main {
         }
 
     }
-
     public static void javaScript() {
         ArrayList<Student> students2 = new ArrayList<>();
         for (Student student : students) {
@@ -57,14 +55,13 @@ public class Main {
         }
 
     }
-
     public static void age() {
         ArrayList<Student> students4 = new ArrayList<>();
         for (Student student : students) {
             if (student.getAge() < 23 && student.getAge() > 18) {
                 students4.add(student);
             }
-            System.out.println("Жашы 19 дан 23");
+            System.out.println(" 19 дан 23");
             for (Student student1 : students4) {
                 System.out.println(student1);
             }
@@ -72,7 +69,6 @@ public class Main {
 
 
     }
-
     public static void aA() {
         ArrayList<Student> students3 = new ArrayList<>();
         for (Student student1 : students) {
@@ -87,12 +83,3 @@ public class Main {
 
     }
 }
-// Student деген класс тузунуз (свойства: name, age, group)
-//ArrayList тузуп аны 10 студент менен толтурунуз
-//1) Бардык студенттердин маалыматтарын консолго чыгарыныз.
-//2) Ошол ArrayList ти группасы боюнча фильтрация кылып 2 жаны листке
-//салыныз(Java,JavaScript)
-//3) Жашы 19 дан 23 ко чейинки студенттерди жаны листке салыныз.
-//        4) Аты "A"тамгасынан башталган студенттерди жаны листке салыныз
-//Ар бир иш аракет учун озунчо метод тузуп, ал методдорду main класска чакырып иштетиниз.
-//Маанилер main класстан берилуусу керек.
